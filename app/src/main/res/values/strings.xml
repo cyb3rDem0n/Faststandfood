@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Faststandfood</string>
+    <string name="action_settings">Settings</string>
+    <string name="request">REQUEST</string>
+    <string name="text_home">Home</string>
+    <string name="text_notifications">User Profile</string>
+    <string name="text_search">Review</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Review</string>
+    <string name="menu_notifications">My Profile</string>
+
+    <string name="permission_rationale_location">permission_rationale_location</string>
+    <string name="permission_required_toast">permission_required_toast</string>
+    <string name="location_permission_denied">location_permission_denied</string>
+    <string name="regione_"><i>Regione:</i>  </string>
+    <string name="citta_"><i>Città:</i>  </string>
+    <string name="tel_"><i>Tel:</i>  </string>
+    <string name="indirizzo_"><i>Indirizzo:</i>  </string>
+    <string name="stand_descript">Stand Image</string>
+    <string name="prezzi_">Prezzi: dai 3 ai 5 euro</string>
+    <string name="aggiungi_ai_preferiti">Aggiungi ai preferiti</string>
+    <string name="feedback_utenti">Feedback Utenti</string>
+    <string name="stand_image">stand image</string>
+    <string name="citta">citta</string>
+    <string name="name">name</string>
+    <string name="reg">reg</string>
+    <string name="val">val</string>
+    <string name="x">X</string>
+
+</resources>

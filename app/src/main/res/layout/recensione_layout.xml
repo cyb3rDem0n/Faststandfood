@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_rec"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Insert your review for a stand"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_rec"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/titolo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Insert the text here"
+        android:inputType="textMultiLine" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText_rec"
+        android:layout_marginTop="121dp"
+        android:max="5"
+        android:progress="1"
+        android:thumb="@android:drawable/star_off" />
+
+    <TextView
+        android:id="@+id/star_seekBar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="How many Stars for this stand?" />
+
+    <EditText
+        android:id="@+id/user_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="USER ID"
+        android:layout_alignBaseline="@+id/stand_id_text"
+        android:layout_alignBottom="@+id/stand_id_text"
+        android:layout_toStartOf="@+id/button_insert_rec" />
+
+    <EditText
+        android:id="@+id/stand_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_insert_rec"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="34dp"
+        android:hint="STAND ID" />
+
+    <Button
+        android:id="@+id/button_insert_rec"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERT"
+        android:onClick="insert"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText_stelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:visibility="gone" />
+
+</RelativeLayout>

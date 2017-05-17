@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_background">
+
+    <TextView
+        android:id="@+id/regione_stand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/citta_stand"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/regione_"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/citta_stand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telefono_stand"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/citta_"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/telefono_stand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nome_stand"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/tel_"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/coordinate_stand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regione_stand"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="@string/indirizzo_"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/nome_stand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:apiKey="AIzaSyCOAaXsac1mx4GGmZlYsZfJQsS8xaG3S3s"
+        tools:context=".StandProfile"
+        tools:layout="@layout/void_layout" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/prezzi_"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/coordinate_stand"
+        android:background="@color/my_background">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/feedback_utenti"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="58dp"
+            android:indeterminate="false"
+            android:max="5"
+            android:progress="1" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/aggiungi_ai_preferiti"
+        android:textSize="18sp"
+        android:onClick="onClick"
+        />
+
+</RelativeLayout>
